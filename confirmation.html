@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Philippine Destination Key - Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+   <style>
+        body {
+             background-image: url(inde.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+
+
+        }
+
+
+
+
+        .container {
+            background-color: white;
+            opacity: .9;
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border: 5px solid rgb(97, 24, 24);
+            border-radius: 20px;
+            border-style: double;
+            box-shadow: 5px 5px 4px black;
+           
+        }
+
+
+
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+
+
+
+        footer {
+            margin-top: 50px;
+            color: #ffffff;
+        }
+
+
+
+
+        h1 {
+            color: rgb(83, 83, 83);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+
+
+        .result-box {
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(83, 83, 83);
+            margin-top: 20px;
+        }
+
+
+
+
+        label{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(83, 83, 83);
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PDK</a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Fare Matrix</a></li>
+                <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+  <body>
+    <div class="container">
+        <h1>Success!</h1>
+        <hr>
+        <h3>Welcome to PDK, <span id="displayName" style="color:rgb(0, 0, 0);">Guest</span>!</h3>
+        <p>Your account has been successfully created.</p>
+        <br>
+        <a href="index.html" class="btn btn-dark">Go to Fare Calculator</a>
+    </div>
+
+    <script>
+        var savedName = localStorage.getItem("username");
+        if (savedName) {
+            document.getElementById("displayName").innerHTML = savedName;
+        }
+    </script>
+
+
+
+
+</div>
+</body>
